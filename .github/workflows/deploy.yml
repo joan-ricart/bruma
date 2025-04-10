@@ -34,11 +34,6 @@ jobs:
       - name: Run migrations
         run: php artisan migrate --force
 
-      - name: Install nodejs
-        uses: actions/setup-node@v3
-        with:
-          node-version: "22"
-
       - name: Install node dependencies
         run: npm i && npm run build
 
