@@ -11,7 +11,7 @@
 
 @section('content')
 
-    <main class="min-h-screen py-20">
+    <main class="container min-h-screen py-20">
         <div class="mb-4 text-center">
             <a href="{{ route('home') }}" class="inline-block">
                 <img src="{{ asset('images/logo-bruma.png') }}" alt="Bruma Restaurant" width="191" height="57"
