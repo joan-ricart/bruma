@@ -1,58 +1,33 @@
-name: Deploy Bruma to Prod
+# name: Deploy Bruma to Prod
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 
-jobs:
-  deploy:
-    runs-on: ubuntu-24.04
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-24.04
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4
 
-      - name: Set up PHP 8.4
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: 8.4
-          tools: composer:v2, node:22
-
-      - name: Create database
-        run: touch ./database/database.sqlite
-
-      - name: Copy .env
-        run: cp .env.example .env
-
-      - name: Install php dependencies
-        run: composer install --optimize-autoloader --no-dev --no-progress --no-interaction --prefer-dist
-
-      - name: Generate application key
-        run: php artisan key:generate
-
-      - name: Run migrations
-        run: php artisan migrate --force
-
-      - name: Install node dependencies
-        run: npm i && npm run build
-
-      - name: Deploy using SSH
-        uses: appleboy/ssh-action@v1
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          password: ${{ secrets.SSH_PASSWORD }}
-          # key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.SSH_PORT }}
-          script: |
-            cd ${{ secrets.APP_PATH }}
-            git pull origin main
-            touch ./database/database.sqlite
-            composer install --optimize-autoloader --no-dev --no-progress --no-interaction --prefer-dist
-            php artisan migrate --force
-            npm i && npm run build
-            php artisan optimize
-            php artisan config:cache
-            php artisan route:cache
-            php artisan view:cache
+#       - name: Deploy using SSH
+#         uses: appleboy/ssh-action@v1
+#         with:
+#           host: ${{ secrets.SSH_HOST }}
+#           username: ${{ secrets.SSH_USERNAME }}
+#           password: ${{ secrets.SSH_PASSWORD }}
+#           port: ${{ secrets.SSH_PORT }}
+#           script: |
+#             cd ${{ secrets.APP_PATH }}
+#             git pull origin main
+#             touch ./database/database.sqlite
+#             composer install --optimize-autoloader --no-dev --no-progress --no-interaction --prefer-dist
+#             php artisan migrate --force
+#             npm i && npm run build
+#             php artisan optimize
+#             php artisan config:cache
+#             php artisan route:cache
+#             php artisan view:cache
