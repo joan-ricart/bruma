@@ -30,3 +30,12 @@ Route::get('/carta', function () {
         'menus' => $menus,
     ]);
 })->name('menu');
+
+Route::get('/politica-de-privacidad', function () {
+    return 'politica privacidad';
+})->name('privacy');
+
+
+Route::get('/accesibilidad', function () {
+    return 'accesibilidad';
+})->name('accessibility');
