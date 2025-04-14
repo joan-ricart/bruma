@@ -27,7 +27,7 @@
             @endforeach
         </div>
 
-        <img src="{{ asset('images/ilustracion-carta.svg') }}" alt="Bruma Restaurant" class="mx-auto" />
+        <img src="{{ asset('images/ilustracion-carta.png') }}" alt="Bruma Restaurant" class="mx-auto" width="216" height="284" />
     </main>
 
 @endsection
