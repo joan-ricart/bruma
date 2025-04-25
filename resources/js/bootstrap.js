@@ -16,7 +16,7 @@ const swiper = new Swiper(".swiper", {
     // configure Swiper to use modules
     modules: [Navigation, Pagination],
     loop: true,
-    spaceBetween: 10,
+    spaceBetween: 4,
     slidesPerView: 2,
 
     autoplay: {

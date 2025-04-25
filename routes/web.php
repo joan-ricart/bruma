@@ -32,10 +32,10 @@ Route::get('/carta', function () {
 })->name('menu');
 
 Route::get('/politica-de-privacidad', function () {
-    return 'politica privacidad';
+    return view('privacy');
 })->name('privacy');
 
 
 Route::get('/accesibilidad', function () {
-    return 'accesibilidad';
+    return view('accessibility');
 })->name('accessibility');

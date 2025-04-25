@@ -4,12 +4,11 @@
 
 @section('content')
     <main>
-        <div class="flex flex-col items-center justify-center overflow-hidden py-24 md:py-32">
-            <video class="md:scale-120 sm:scale-140 relative w-[760px] max-w-full scale-150 pb-6" autoplay loop muted
-                playsinline src="{{ asset('bruma-intro.mp4') }}"></video>
+        <div class="md:pb-42 flex flex-col items-center justify-center overflow-hidden pb-32 pt-36 md:pt-48">
+            <img src="{{ asset('images/logo-bruma-big.png') }}" class="max-w-4/5 mb-8" alt="Logo BRUMA" width="501"
+                height="151" />
 
-            <nav
-                class="z-10 -mt-16 flex items-center justify-center gap-4 px-4 py-3 text-center sm:-mt-20 md:-mt-32 md:gap-5">
+            <nav class="sticky top-20">
                 <a href="{{ route('book_es') }}"
                     class="border-bruma-orange text-bruma-orange inline-block w-28 whitespace-nowrap rounded border bg-white p-2 text-center uppercase md:w-32 md:text-lg">Reserva</a>
                 <a href="{{ route('menu') }}"
@@ -21,27 +20,27 @@
             $images = [
                 [
                     'src' => asset('images/slider-home/Image-1.jpg'),
-                    'alt' => 'Image 1',
+                    'alt' => 'Imagen Bruma 1',
                 ],
                 [
                     'src' => asset('images/slider-home/Image-2.jpg'),
-                    'alt' => 'Image 2',
+                    'alt' => 'Imagen Bruma 2',
                 ],
                 [
                     'src' => asset('images/slider-home/Image-3.jpg'),
-                    'alt' => 'Image 3',
+                    'alt' => 'Imagen Bruma 3',
                 ],
                 [
                     'src' => asset('images/slider-home/Image-4.jpg'),
-                    'alt' => 'Image 4',
+                    'alt' => 'Imagen Bruma 4',
                 ],
                 [
                     'src' => asset('images/slider-home/Image-5.jpg'),
-                    'alt' => 'Image 5',
+                    'alt' => 'Imagen Bruma 5',
                 ],
                 [
                     'src' => asset('images/slider-home/Image-6.jpg'),
-                    'alt' => 'Image 6',
+                    'alt' => 'Imagen Bruma 6',
                 ],
             ];
         @endphp
@@ -100,23 +99,22 @@
             </div>
         </div>
 
-        <div class="container max-w-xl py-20 text-center">
-            <h2 class="text-bruma-orange mb-4 text-lg uppercase">Sobre nosaltres</h2>
-            <p class="text-bruma-dark mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+        <div class="container max-w-2xl py-20 text-center">
+            <p class="text-bruma-dark mb-0.5">
+                Un bistró on la cuina de sempre busca sorprendre’t.
+                Producte de temporada, vins fins per acompanyar-la i còctels per allargar la sobretaula. Una casa pels bon
+                vivants.
             </p>
             <p class="text-bruma-dark mb-8">
                 <b>DINARS I SOPARS 7/7</b>
             </p>
-            <p class="text-bruma-dark mb-2">
-                Segueix-nos al nostre Instagram <br>
+            <div class="text-bruma-dark align-center mb-2 flex justify-center gap-2">
+                <img src="{{ asset('images/logo-instagram.svg') }}" alt="Instagram" width="16" height="16" />
                 <a href="https://www.instagram.com/brumarestaurant" class="text-bruma-orange uppercase underline"
                     target="_blank">@BRUMARESTAURANT</a>
-            </p>
+            </div>
             <img class="mx-auto mt-4 inline-block max-w-full" src="{{ asset('images/ilustracion-about-us.png') }}"
-                width="297" height="420" />
+                width="297" height="420" alt="Ilustración brindando en la mesa" />
         </div>
     </main>
 @endsection

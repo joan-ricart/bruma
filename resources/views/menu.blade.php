@@ -13,7 +13,7 @@
         </div>
 
         <div class="text-bruma-orange mb-16 text-center text-sm md:text-base">
-            CARTA / MENU
+            CARTA
         </div>
 
         <div class="mx-auto mb-8 grid max-w-lg gap-4 md:grid-cols-2 md:gap-8">
