@@ -3,10 +3,11 @@
     <nav class="grid w-full grid-cols-2 items-center gap-4 text-sm 2xl:container md:grid-cols-3 md:text-base">
         <div class="">
             @if (isset($showBookButton) && $showBookButton)
-                <a href="{{ route('book_es') }}" class="uppercase underline">Reserva</a>
+                <a x-show="!menuExpanded" href="{{ route('book_es') }}" class="uppercase underline">Reserva</a>
             @endif
+
             @if (isset($showMenuButton) && $showMenuButton)
-                <a href="{{ route('menu') }}" class="uppercase underline">Carta</a>
+                <a x-show="!menuExpanded" href="{{ route('menu') }}" class="uppercase underline">Carta</a>
             @endif
 
             <a x-show="menuExpanded" href="{{ route('home') }}" class="inline-block md:hidden">
