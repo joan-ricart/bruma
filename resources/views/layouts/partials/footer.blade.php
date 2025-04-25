@@ -26,7 +26,7 @@
         <div
             class="text-bruma-orange w-full px-4 py-3 uppercase max-md:text-center md:flex md:items-center md:justify-between">
             <div class="text-sm max-md:pb-1.5">
-                <a href="tel:632.754.453" class="max-md:block max-md:pb-1.5">632.754.453</a>
+                <a href="tel:632754453" class="max-md:block max-md:pb-1.5">632.754.453</a>
                 <span class="max-md:hidden">-</span>
                 <a href="mailto:reserva@brumarestaurant.com">reserva@brumarestaurant.com</a>
             </div>

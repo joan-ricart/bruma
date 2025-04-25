@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Bruma Restaurant Barcelona')
+@section('og:title', 'Bruma Restaurant Barcelona')
+@section('description', "Deixa't sorprendre per la nostra cuina, amb producte de temporada, vins fins i còctels.")
+@section('og:description', "Deixa't sorprendre per la nostra cuina, amb producte de temporada, vins fins i còctels.")
 
 @section('content')
     <main>

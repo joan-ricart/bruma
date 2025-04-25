@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Reserva - Bruma Restaurant Barcelona')
+@section('og:title', 'Reserva - Bruma Restaurant Barcelona')
+@section('description', 'Reserva la teva taula a Bruma Restaurant, al Carrer Aribau 31. Telèfon 632 754 453')
+@section('og:description', 'Reserva la teva taula a Bruma Restaurant, al Carrer Aribau 31. Telèfon 632 754 453')
 
 @php
     $iframeUrl = match ($lang) {

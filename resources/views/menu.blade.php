@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Carta - Bruma Restaurant Barcelona')
+@section('og:title', 'Carta - Bruma Restaurant Barcelona')
+@section('description', 'Descobreix la nostra carta.')
+@section('og:description', 'Descobreix la nostra carta.')
 
 @section('content')
 
@@ -27,7 +30,8 @@
             @endforeach
         </div>
 
-        <img src="{{ asset('images/ilustracion-carta.png') }}" alt="Bruma Restaurant" class="mx-auto" width="216" height="284" />
+        <img src="{{ asset('images/ilustracion-carta.png') }}" alt="Bruma Restaurant" class="mx-auto" width="216"
+            height="284" />
     </main>
 
 @endsection
