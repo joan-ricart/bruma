@@ -17,23 +17,25 @@ const swiper = new Swiper(".swiper", {
     modules: [Navigation, Pagination],
     loop: true,
     spaceBetween: 4,
-    slidesPerView: 2,
 
     autoplay: {
         delay: 4000,
     },
 
-    breakpoints: {
-        320: {
-            slidesPerView: 2,
-        },
-        480: {
-            slidesPerView: 3,
-        },
-        767: {
-            slidesPerView: 4,
-        },
-    },
+    slidesPerView: "auto",
+    // centeredSlides: false,
+
+    // breakpoints: {
+    //     320: {
+    //         slidesPerView: 2,
+    //     },
+    //     480: {
+    //         slidesPerView: 3,
+    //     },
+    //     767: {
+    //         slidesPerView: 'auto',
+    //     },
+    // },
 
     navigation: {
         nextEl: ".swiper-next",

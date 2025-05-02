@@ -19,3 +19,7 @@
     --color-soma-green: #38523b;
     --font-sans: "Roboto Mono", monospace;
 }
+
+[x-cloak] {
+    display: none !important;
+}

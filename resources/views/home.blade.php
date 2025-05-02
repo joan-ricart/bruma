@@ -11,7 +11,7 @@
             <img src="{{ asset('images/logo-bruma-big.png') }}" class="max-w-4/5 mb-8" alt="Logo BRUMA" width="501"
                 height="151" />
 
-            <nav class="sticky top-20">
+            <nav class="flex items-center justify-center gap-4">
                 <a href="{{ route('book_es') }}"
                     class="border-bruma-orange text-bruma-orange inline-block w-28 whitespace-nowrap rounded border bg-white p-2 text-center uppercase md:w-32 md:text-lg">Reserva</a>
                 <a href="{{ route('menu') }}"
@@ -22,36 +22,41 @@
         @php
             $images = [
                 [
-                    'src' => asset('images/slider-home/Image-1.jpg'),
+                    'src' => asset('images/slider-home/img-1.jpg'),
                     'alt' => 'Imagen Bruma 1',
                 ],
                 [
-                    'src' => asset('images/slider-home/Image-2.jpg'),
+                    'src' => asset('images/slider-home/img-2.jpg'),
                     'alt' => 'Imagen Bruma 2',
                 ],
                 [
-                    'src' => asset('images/slider-home/Image-3.jpg'),
+                    'src' => asset('images/slider-home/img-3.jpg'),
                     'alt' => 'Imagen Bruma 3',
                 ],
                 [
-                    'src' => asset('images/slider-home/Image-4.jpg'),
+                    'src' => asset('images/slider-home/img-4.jpg'),
                     'alt' => 'Imagen Bruma 4',
                 ],
                 [
-                    'src' => asset('images/slider-home/Image-5.jpg'),
+                    'src' => asset('images/slider-home/img-5.jpg'),
                     'alt' => 'Imagen Bruma 5',
                 ],
                 [
-                    'src' => asset('images/slider-home/Image-6.jpg'),
+                    'src' => asset('images/slider-home/img-6.jpg'),
                     'alt' => 'Imagen Bruma 6',
+                ],
+                [
+                    'src' => asset('images/slider-home/img-7.jpg'),
+                    'alt' => 'Imagen Bruma 7',
                 ],
             ];
         @endphp
         <div class="swiper relative">
             <div class="swiper-wrapper">
                 @foreach ($images as $image)
-                    <div class="swiper-slide">
-                        <img src="{{ $image['src'] }}" alt="{{ $image['alt'] }}" />
+                    <div class="swiper-slide w-auto!">
+                        <img src="{{ $image['src'] }}" alt="{{ $image['alt'] }}"
+                            class="max-h-[300px] object-contain sm:max-h-[450px] md:max-h-[600px]" />
                     </div>
                 @endforeach
             </div>
@@ -104,7 +109,7 @@
 
         <div class="container max-w-2xl py-20 text-center">
             <p class="text-bruma-dark mb-0.5">
-                Un bistró on la cuina de sempre busca sorprendre’t.
+                Un restaurant on la cuina de sempre busca sorprendre’t.
                 Producte de temporada, vins fins per acompanyar-la i còctels per allargar la sobretaula. Una casa pels bon
                 vivants.
             </p>
@@ -118,6 +123,13 @@
             </div>
             <img class="mx-auto mt-4 inline-block max-w-full" src="{{ asset('images/ilustracion-about-us.png') }}"
                 width="297" height="420" alt="Ilustración brindando en la mesa" />
+
+            <nav class="mt-10 flex items-center justify-center gap-4">
+                <a href="{{ route('book_es') }}"
+                    class="border-bruma-orange text-bruma-orange inline-block w-28 whitespace-nowrap rounded border bg-white p-2 text-center uppercase md:w-32 md:text-lg">Reserva</a>
+                <a href="{{ route('menu') }}"
+                    class="border-bruma-orange text-bruma-orange inline-block w-28 whitespace-nowrap rounded border bg-white p-2 text-center uppercase md:w-32 md:text-lg">Carta</a>
+            </nav>
         </div>
     </main>
 @endsection
