@@ -22,32 +22,32 @@
         @php
             $images = [
                 [
-                    'src' => asset('images/slider-home/img-1.jpg'),
+                    'src' => asset('images/slider-home/img-4.jpg'),
                     'alt' => 'Imagen Bruma 1',
                 ],
                 [
-                    'src' => asset('images/slider-home/img-2.jpg'),
+                    'src' => asset('images/slider-home/img-7.jpg'),
                     'alt' => 'Imagen Bruma 2',
                 ],
                 [
-                    'src' => asset('images/slider-home/img-3.jpg'),
+                    'src' => asset('images/slider-home/img-5.jpg'),
                     'alt' => 'Imagen Bruma 3',
                 ],
                 [
-                    'src' => asset('images/slider-home/img-4.jpg'),
+                    'src' => asset('images/slider-home/img-3.jpg'),
                     'alt' => 'Imagen Bruma 4',
                 ],
                 [
-                    'src' => asset('images/slider-home/img-5.jpg'),
+                    'src' => asset('images/slider-home/img-1.jpg'),
+                    'alt' => 'Imagen Bruma 5',
+                ],
+                [
+                    'src' => asset('images/slider-home/img-2.jpg'),
                     'alt' => 'Imagen Bruma 5',
                 ],
                 [
                     'src' => asset('images/slider-home/img-6.jpg'),
                     'alt' => 'Imagen Bruma 6',
-                ],
-                [
-                    'src' => asset('images/slider-home/img-7.jpg'),
-                    'alt' => 'Imagen Bruma 7',
                 ],
             ];
         @endphp
