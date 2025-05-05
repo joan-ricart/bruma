@@ -108,15 +108,15 @@
         </div>
 
         <div class="container max-w-2xl py-20 text-center">
-            <p class="text-bruma-dark mb-0.5">
+            <p class="mb-0.5">
                 Un restaurant on la cuina de sempre busca sorprendre’t.
                 Producte de temporada, vins fins per acompanyar-la i còctels per allargar la sobretaula. Una casa pels bon
                 vivants.
             </p>
-            <p class="text-bruma-dark mb-8">
+            <p class="mb-8">
                 <b>DINARS I SOPARS 7/7</b>
             </p>
-            <div class="text-bruma-dark align-center mb-2 flex justify-center gap-2">
+            <div class="align-center mb-2 flex justify-center gap-2">
                 <img src="{{ asset('images/logo-instagram.svg') }}" alt="Instagram" width="16" height="16" />
                 <a href="https://www.instagram.com/brumarestaurant" class="text-bruma-orange uppercase underline"
                     target="_blank">@BRUMARESTAURANT</a>

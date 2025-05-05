@@ -2,7 +2,7 @@
     :class="menuExpanded ? 'bg-bruma-orange text-white' : 'text-bruma-orange'">
     <nav class="grid w-full grid-cols-2 items-center gap-4 text-sm 2xl:container md:grid-cols-3 md:text-base">
         <div class="">
-            <img x-show="!menuExpanded" class="" src="{{ asset('images/grup-soma.png') }}" width="100"
+            <img x-show="!menuExpanded" class="" src="{{ asset('images/grup-soma-green.png') }}" width="100"
                 height="20" />
 
             {{-- @if (isset($showBookButton) && $showBookButton)

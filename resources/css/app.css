@@ -20,6 +20,12 @@
     --font-sans: "Roboto Mono", monospace;
 }
 
+@layer base {
+    body {
+        @apply text-bruma-dark; /* or any custom color */
+    }
+}
+
 [x-cloak] {
     display: none !important;
 }
