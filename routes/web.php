@@ -8,14 +8,14 @@ Route::get('/', function () {
     ]);
 })->name('home');
 
-Route::get('/reserva-tu-mesa', function () {
+Route::get('/reserva', function () {
     return view('book', [
         'lang' => 'es',
         'showMenuButton' => true,
     ]);
 })->name('book_es');
 
-Route::get('/book-a-table', function () {
+Route::get('/book', function () {
     return view('book', [
         'lang' => 'en',
         'showMenuButton' => true,
