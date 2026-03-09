@@ -1,0 +1,20 @@
+services:
+  app:
+    build: .
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./:/app
+      - vendor_data:/app/vendor
+      - caddy_data:/data
+      - caddy_config:/config
+    environment:
+      SERVER_NAME: ":80"
+      CADDY_GLOBAL_OPTIONS: auto_https disable_redirects
+
+volumes:
+  caddy_data: {}
+  caddy_config: {}
+  vendor_data: {}

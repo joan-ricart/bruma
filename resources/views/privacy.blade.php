@@ -6,7 +6,7 @@
     <main class="container min-h-screen pb-20 pt-28">
         <div class="mb-10 text-center">
             <a href="{{ route('home') }}" class="inline-block">
-                <img src="{{ asset('images/logo-bruma.png') }}" alt="Bruma Restaurant" width="191" height="57"
+                <img src="{{ asset('images/logo-bruma-black.png') }}" alt="Bruma Restaurant" width="191" height="57"
                     class="" />
             </a>
         </div>

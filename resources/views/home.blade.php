@@ -8,7 +8,7 @@
 @section('content')
     <main>
         <div class="md:pb-42 flex flex-col items-center justify-center overflow-hidden pb-32 pt-36 md:pt-48">
-            <img src="{{ asset('images/logo-bruma-big.png') }}" class="max-w-4/5 mb-8" alt="Logo BRUMA" width="501"
+            <img src="{{ asset('images/logo-bruma-black.png') }}" class="max-w-4/5 mb-8" alt="Logo BRUMA" width="501"
                 height="151" />
 
             <nav class="flex items-center justify-center gap-4">
@@ -117,7 +117,7 @@
                 <b>DINARS I SOPARS 7/7</b>
             </p>
             <div class="align-center mb-2 flex justify-center gap-2">
-                <img src="{{ asset('images/logo-instagram.svg') }}" alt="Instagram" width="16" height="16" />
+                <img src="{{ asset('images/logo-instagram.svg') }}" alt="Instagram" width="16" height="16" class="grayscale"/>
                 <a href="https://www.instagram.com/brumarestaurant" class="text-bruma-orange uppercase underline"
                     target="_blank">@BRUMARESTAURANT</a>
             </div>

@@ -13,9 +13,9 @@
 }
 
 @theme {
-    --color-bruma-orange: #db5a29;
-    --color-bruma-lightorange: #ffeee8;
-    --color-bruma-dark: #224567;
+    --color-bruma-orange: #000;
+    --color-bruma-lightorange: #eee;
+    --color-bruma-dark: #222;
     --color-soma-green: #38523b;
     --font-sans: "Roboto Mono", monospace;
 }
