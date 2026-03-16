@@ -33,7 +33,7 @@
                 <a href="mailto:reserva@brumarestaurant.com">reserva@brumarestaurant.com</a>
             </div>
             <div class="text-xs max-md:pt-1.5">
-                <span>BRUMA&copy; 2025</span>
+                <span>BRUMA&copy; {{ date('Y') }}</span>
                 ·
                 <a href="{{ route('privacy') }}" target="_blank" class="text-bruma-orange underline"><span
                         class="max-md:hidden">POLITICA DE</span> PRIVACIDAD</a>

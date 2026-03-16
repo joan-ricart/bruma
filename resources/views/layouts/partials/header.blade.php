@@ -13,8 +13,8 @@
                 <a x-show="!menuExpanded" href="{{ route('menu') }}" class="uppercase underline">Carta</a>
             @endif --}}
             <a x-show="menuExpanded" href="{{ route('home') }}">
-                <img src="{{ asset('images/logo-bruma-small-white.png') }}" alt="Logo Bruma Restaurant" class=""
-                    width="73" height="22">
+                <img src="{{ asset('images/logo-bruma-white.png') }}" alt="Logo Bruma Restaurant" class=""
+                    width="75" height="23">
             </a>
         </div>
         <div class="text-center max-md:hidden">
