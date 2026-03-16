@@ -2,7 +2,7 @@
     <div class="absolute left-0 right-0 top-1/2 z-[1] h-[1px] bg-[#000]"></div>
     <div class="relative z-[2] inline-block bg-white px-4">
         <a href="https://soma-restaurant.com" target="_blank">
-            <img src="{{ asset('images/grup-soma-footer.png') }}" alt="GRUP SOMA - SOMA - BRUMA" width="298"
+            <img src="{{ asset('images/grup-soma-footer.png') . '?v1' }}" alt="GRUP SOMA - SOMA - BRUMA" width="298"
                 height="28" class="grayscale"/>
         </a>
     </div>
