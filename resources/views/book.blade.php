@@ -34,7 +34,7 @@
 
        <div class="mx-4 mx-auto mb-8 max-w-lg">
             <script type="text/javascript" src="https://www.covermanager.com/js/iframeResizer.min.js"></script>
-            <iframe id="restaurante-bruma" title="Reservas" src="{{ $iframeUrl }}" frameborder="0" height="2000"
+            <iframe id="restaurante-bruma" title="Reservas" src="{{ $iframeUrl }}" frameborder="0" height="2600"
                 width="100%" onload="iFrameResize();" scrolling="no" allow="payment"></iframe>
         </div>
 
