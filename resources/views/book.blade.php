@@ -32,19 +32,11 @@
                 table</a>
         </nav>
 
-        <div class="mx-4 mx-auto mb-8 max-w-lg">
-            <!-- <script type="text/javascript" src="https://www.covermanager.com/js/iframeResizer.min.js"></script> -->
-           
-            <iframe id="restaurante-bruma" title="Reservas" src="{{ $iframeUrl }}" frameborder="0" height="1000"
-                width="100%" scrolling="no" allow="payment"></iframe>
+       <div class="mx-4 mx-auto mb-8 max-w-lg">
+            <script type="text/javascript" src="https://www.covermanager.com/js/iframeResizer.min.js"></script>
+            <iframe id="restaurante-bruma" title="Reservas" src="{{ $iframeUrl }}" frameborder="0" height="2000"
+                width="100%" onload="iFrameResize();" scrolling="no" allow="payment"></iframe>
         </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/iframe-resizer@5.5.9/js/iframeResizer.min.js" referrerpolicy="no-referrer"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                iFrameResize({}, '#restaurante-bruma');
-            });
-        </script>
 
     </main>
 
