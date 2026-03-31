@@ -7,8 +7,8 @@
 
 @php
     $iframeUrl = match ($lang) {
-        'es' => 'https://www.covermanager.com/reservation/module_restaurant/restaurante-bruma-restaurant/spanish',
-        'en' => 'https://www.covermanager.com/reservation/module_restaurant/restaurante-bruma-restaurant/english',
+        'es' => 'https://www.covermanager.com/reserve/module_restaurant/restaurante-bruma-restaurant/spanish',
+        'en' => 'https://www.covermanager.com/reserve/module_restaurant/restaurante-bruma-restaurant/english',
     };
 @endphp
 
