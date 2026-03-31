@@ -7,8 +7,8 @@
 
 @php
     $iframeUrl = match ($lang) {
-        'es' => 'https://www.covermanager.com/reserve/module_restaurant/restaurante-bruma/spanish',
-        'en' => 'https://www.covermanager.com/reserve/module_restaurant/restaurante-bruma/english',
+        'es' => 'https://www.covermanager.com/reservation/module_restaurant/restaurante-bruma-restaurant/spanish',
+        'en' => 'https://www.covermanager.com/reservation/module_restaurant/restaurante-bruma-restaurant/english',
     };
 @endphp
 
@@ -33,7 +33,7 @@
         </nav>
 
        <div class="mx-4 mx-auto mb-8 max-w-lg">
-            <script type="text/javascript" src="https://www.covermanager.com/js/iframeResizer.min.js"></script>
+            <script type="text/javascript" src="https://www.covermanager.com/js/iframeResizer/iframeResizer.min.js"></script>
             <iframe id="restaurante-bruma" title="Reservas" src="{{ $iframeUrl }}" frameborder="0" height="2600"
                 width="100%" onload="iFrameResize();" scrolling="no" allow="payment"></iframe>
         </div>
