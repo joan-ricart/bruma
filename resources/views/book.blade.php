@@ -34,10 +34,17 @@
 
         <div class="mx-4 mx-auto mb-8 max-w-lg">
             <!-- <script type="text/javascript" src="https://www.covermanager.com/js/iframeResizer.min.js"></script> -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/5.0.1/iframeResizer.min.js" referrerpolicy="no-referrer"></script>
+           
             <iframe id="restaurante-bruma" title="Reservas" src="{{ $iframeUrl }}" frameborder="0" height="1000"
-                width="100%" onload="iFrameResize();" scrolling="no" allow="payment"></iframe>
+                width="100%" scrolling="no" allow="payment"></iframe>
         </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/5.0.1/iframeResizer.min.js" referrerpolicy="no-referrer"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                iFrameResize({}, '#restaurante-bruma');
+            });
+        </script>
 
     </main>
 
