@@ -39,7 +39,7 @@
                 width="100%" scrolling="no" allow="payment"></iframe>
         </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/5.0.1/iframeResizer.min.js" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/iframe-resizer@5.5.9/js/iframeResizer.min.js" referrerpolicy="no-referrer"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 iFrameResize({}, '#restaurante-bruma');
